@@ -1,0 +1,66 @@
+Ques 1:- What are some new things happening in the web?
+Ans:- 
+1: Blockchain Technology.
+2: Accelerated Mobile Pages.
+3: Voice Search Optimization.
+4: AI-Powered Chatbots.
+5: Motion UI.
+6: Data Security.
+7: Cybersecurity.
+8: Virtual Reality.
+9: Automation Testing.
+10: Responsive Websites.
+
+
+Ques 2:- Explain a project that you have built?
+Ans:- there are some point how to explain your project.
+1: Project Introduction.
+2: Modules description.
+3: Advantages and the main functionality of your website or application.
+4: Tools, Technologies, and Platform used.
+5: Personal contribution and your role in the project.
+6: Challenges in the project.
+7: Number of people in the project.
+
+
+
+Ques 3:- Whats something exciting that you have built?
+
+Answer: 
+Answer In this project I designed the beautiful UI part and dynamic functionality like  SignUp page, LogIn Page,
+   with user verification, in Home page I create a custom slide show,  and in product page add the all the product details, 
+statically in my local machine, and add add to cart and remove from cart functionality, and simple payment page.
+
+
+4.What are you most excited about?
+
+Answer: 
+This is my first job application, so I cannot say exactly what I am excited about when it comes to work. 
+When you are young, however, everything looks exciting and promising.
+I can assure you that I am looking forward to start working, after spending long years studying, and getting ready for this very moment.
+ What’s more, I really like what you do in this company, and it will be a dream come true to get a chance to work for you.
+
+
+
+5. Why do coding standards matter? What are some patterns you follow?
+
+Answer : The reason why coding standards are important is that they help to ensure safety, security, and reliability.
+Coding rules and guidelines ensure that software is:
+Safe: It can be used without causing harm.
+Secure: It can’t be hacked.
+Reliable: It functions as it should, every time.
+Testable: It can be tested at the code level.
+Maintainable: It can be maintained, even as your codebase grows.
+Portable: It works the same in every environment.
+
+6.How do you go about managing responsive websites?
+
+Answer :  Focus On The Content, Get To Know The Media Query,  Keep A “Mobile First” Mentality, Create A Flexible Foundation, Optimize Your Assets, ake Your Website “Touch-Friendly”, Pick The Right Content Management System (CMS), Invest In Testing Tools etc.
+
+7.What do you care about the most when you write software?
+
+Answer: 
+Acceptability. Software must be acceptable to the type of users for which it is designed. ...
+Dependability & Security. Software dependability includes a range of characteristics including reliability, security, and safety. ...
+Efficiency. ...
+Maintainability.

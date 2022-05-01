@@ -1,0 +1,225 @@
+Ques 1:- Explain briefly what happens when you hit a url? explain DNS lookup.
+
+Ans:- URL stands for Uniform Resource Locator. URL is the address of the website which you can find in the address bar of your web browser. It is a reference to a resource on the internet.
+Steps for what happens when we enter a URL :
+1:Browser checks cache for DNS entry to find the corresponding IP address of website.
+  It looks for following cache. If not found in one, then continues checking to the next until found.
+  (a)Browser Cache
+  (b)Operating Systems Cache
+  (c)Router Cache
+  (d)ISP Cache
+2:If not found in cache, ISP’s (Internet Service Provider) DNS server initiates a DNS query to find IP address of server that hosts the domain name.
+  The requests are sent using small data packets that contain information content of request and IP address it is destined for.
+3:Browser initiates a TCP (Transfer Control Protocol) connection with the server using synchronize(SYN) and acknowledge(ACK) messages.
+4:Browser sends an HTTP request to the web server. GET or POST request.
+5:Server on the host computer handles that request and sends back a response. It assembles a response in some format like JSON, XML and HTML.
+6:Server sends out an HTTP response along with the status of response.
+7:Browser displays HTML content
+8:Finally, Done.
+
+DNS :- DNS is short for Domain Name System. Like a phonebook, DNS maintains and maps the name of the website, i.e. URL, and particular IP address it links to. Every URL on the internet has a unique IP address which is of the computer which hosts the server of the website requested.
+
+
+
+Ques 2:- What is a URLs full form? Explain what a url is and the four parts it consists of The protocol in use The hostname of the server The location of the file The arguments to the file.
+
+
+
+
+
+
+
+
+
+
+
+Ques 3:- What is HTTP protocol?
+Ans :- HTTP stands for HyperText Transfer Protocol. It is invented by Tim Berner. HyperText is the type of text which is specially coded with the help of some standard coding language called as HyperText Markup Language (HTML). HTTP/2 is latest version of HTTP, which was published on May 2015.
+The protocols that are used to transfer hypertext between two computers is known as HyperText Transfer Protocol. HTTP provides standard between a web browser and web server to establish communication. It is set of rules for transferring data from one computer to another. Data such as text, images, and other multimedia files are shared on the World Wide Web. Whenever a web user opens their web browser, user indirectly uses HTTP. It is an application protocol which is used for distributed, collaborative, hypermedia information systems. 
+
+
+Ques 4:- What is TCP Protocol?
+Ans :- TCP (Transmission Control Protocol) is one of the main protocols of the Internet protocol suite. It lies between the Application and Network Layers which are used in providing reliable delivery services. It is a connection-oriented protocol for communications that helps in the exchange of messages between the different devices over a network.
+
+
+
+Ques 5 :- Explain all the different HTTP methods?
+Ans :- The set of common methods for HTTP/1.1 is defined below and this set can be expanded based on requirements. These method names are case sensitive and they must be used in uppercase.
+    1: GET
+    The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+
+    2: HEAD
+    Same as GET, but transfers the status line and header section only.
+
+    3: POST
+    A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+    4: PUT
+    Replaces all current representations of the target resource with the uploaded content.
+
+    5: DELETE
+    Removes all current representations of the target resource given by a URI.
+
+    6: CONNECT
+    Establishes a tunnel to the server identified by a given URI.
+
+    7: OPTIONS
+    Describes the communication options for the target resource.
+
+    8: TRACE
+    Performs a message loop-back test along the path to the target resource.
+
+
+
+Ques 6 :- What are HTTP headers?
+Ans :- The HTTP headers are used to pass additional information between the clients and the server through the request and response header. All the headers are case-insensitive, headers fields are separated by colon, key-value pairs in clear-text string format. 
+    There are four kinds of headers context-wise:  
+    General Header: This type of headers applied on Request and Response headers both but with out  affecting the database body.
+    Request Header: This type of headers contains information about the fetched request by the client.
+    Response Header: This type of headers contains the location of the source that has been requested by the client.
+    Entity Header: This type of headers contains the information about the body of the resources like MIME type, Content-length.
+
+
+
+Ques 7:- What are some HTTP response codes? what does it mean? 2xx, 3xx, 4xx, 5xx.
+Ans:- 1xx – This stands for an informational response, that is, the request was received, continuing
+    process, and should wait for the final response.
+    2xx – This stands for a successful response, that is,  the request was successfully received, understood, and accepted.
+    3xx – This stands for redirection response, that is, some further action needs to be taken in order to complete the request.
+    4xx – This stands for client error, that is, the request contains bad syntax or cannot be fulfilled.
+    5xx – This stands for server error, that is, the server failed to fulfill an apparently valid request.
+
+
+
+Ques 8:- What does cache control on http response mean?
+Ans :- Conceptually, a cache system always involve at least three participants. With HTTP, these participants are the client, the server, and the caching proxy. 
+ However, when learning about HTTP caching, we strongly encourage you not to think of the client as your typical web browser because these days, they all ship with their own HTTP caching layer. It makes it difficult to clearly separate the browser from the cache. For this reason, we invite you to think of the client as a headless command line program such as cURL or any application without an embedded HTTP cache.
+
+
+Ques 9:- What is polling?
+Ans :- . Polling is the process where the computer or controlling device waits for an external device to check for its readiness or state, often with low-level hardware. For example, when a printer is connected via a parallel port, the computer waits until the printer has received the next character.
+
+
+Ques 10:- What is long polling?
+Ans:- It is a technology where the client requests information from the server without expecting an immediate response or basically involves making an HTTP request to a server and then holding the connection open to allow the server to respond later. Using long polling the server allows approximately 6 parallel connections from the browser.
+
+
+Ques 11:- What are web sockets?
+Ans :- WebSocket is a computer communication protocol that enables us full-duplex communication channels over a single transfer control protocol (TCP) connection. The WebSocket protocol enables interaction between a web browser and a web server with low weight overheads, providing real-time data transfer from and to the server. 
+
+
+Ques 12:- How is web sockets different from HTTP?
+Ans :- WebSocket is a bidirectional communication protocol that can send the data from the client to the server or from the server to the client by reusing the established connection channel. The connection is kept alive until terminated by either the client or the server. But The HTTP protocol is a unidirectional protocol that works on top of TCP protocol which is a connection-oriented transport layer protocol, we can create the connection by using HTTP request methods after getting the response HTTP connection get closed.
+
+
+
+Ques 13:- What is HTTPS?
+Ans:- HTTPS stands for Hyper Text Transfer Protocol Secure. HTTP Secure (HTTPS), could be a combination of the Hypertext Transfer Protocol with the SSL/TLS convention to supply encrypted communication and secure distinguishing proof of a arrange web server. 
+
+
+
+Ques 14:- What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
+Ans:- CORS (Cross-Origin Resource Sharing) is a mechanism by which data or any other resource of a site could be shared intentionally to a third party website when there is a need. Generally, access to resources that are residing in a third party site is restricted by the browser clients for security purposes.
+
+
+Ques 15:- What does Access-Control-Allow-Origin header do?
+Ans:- The Access-Control-Allow-Methods header is a  Cross-Origin Resource Sharing(CORS) response-type header. It is used to indicate which HTTP methods are permitted while accessing the resources in response to the cross-origin requests. 
+
+
+Ques 16:- What is clickjacking? How do you fix it?
+Ans :- Clickjacking or UI redressing is one of the common cybersecurity attacks. In this attack, the end user is given a webpage which looks legit and he/she is tricked to click something in the UI. But behind the scenes, a specifically crafted page is loaded behind the legitimately looking page.
+To the end user it feels like, the component in the UI is being clicked, but unfortunately the click is made on the invisible component in the hidden page and the action mapped for that button click will be performed.
+
+
+Ques 17:- What are some performance metrics for your website?
+Ans:- There are some performance metrics for website
+1. User satisfaction and Apdex.
+2. FP/ FCP.
+3. Time to interactive.
+4. Page speed and load time.
+5. Time to first byte.
+6. DNS Lookup time.
+7. Error Rate.
+8. Peak Response Time.
+9. Hardware utilization.
+10. Uptime.
+
+
+Ques 18:- What does the following term mean?
+(1) Time to first byte:- Time to First Byte (TTFB) refers to the time between the browser requesting a page and when it receives the first byte of information from the server. This time includes DNS lookup and establishing the connection using a TCP handshake and SSL handshake if the request is made over https.
+
+(2) Page load time:- In its simplest terms, page load time is the average amount of time it takes for a page to show up on your screen. It's calculated from initiation (when you click on a page link or type in a Web address) to completion (when the page is fully loaded in the browser).
+
+
+
+Ques 19:- What do CDN or Content Delivery Networks do? When do you need a CDN?
+Ans:- Over the last few years there has been a huge increase in the number of Internet users. YouTube alone has 2 Billion users worldwide, while Netflix has over 160 million users. Streaming content to such a wide demographic of users is no easy task. One can think that a straightforward approach to this can be building a large data center, storing all the content in the servers, and provide it to the users worldwide.
+
+
+
+Ques 20:- What is the difference between Client Side Renderring and Server Side Renderring?
+Ans:- 
+(1) Primary Function:- 
+The Client-side Scripting (A) / The Server-side Scripting (B)
+A:-The primary function of client-side scripting is to provide the requested output to the end-user.
+B:-The primary function of server-side scripting is to manipulate and give access to the required database as per request.  
+
+(2) Uses:-
+A:- The client-side is used as the front end, where the user gets to see what we have browsed.
+B:- The server-side is used as a back-end where data is processed and is not visible to the client user.
+
+(3) Code allowance:-
+A:- On the client side, the user is allowed to access the code written after verifying the user’s need. 
+B:- Server-side scripting allows the back-end developer to hide the source code from the user. 
+
+(4) Processing:-
+A:- The client-side does not need any interaction with the server. 
+B:- Server-side scripting on the other hand is all about communicating with the servers. 
+
+(5) Function:-
+A:- Used for the visibility and getting out the required data from servers database.
+B:- Used for the customization or modification of the data to change the website dynamically.  
+
+(6) Dependability:-
+A:- Client-side scripting depends upon the user’s browser version. 
+B:- Serve-side does not depend on the client. 
+
+(7) Security:-
+A:- This way of scripting is less secure than Server-side scripting because of the accessibility of code provided to the client. 
+B:- Server-side scripting is considered as a more secure way while working on a web application.
+
+(8) Connectivity:-
+A:- The client-side does not connect to the database at the webserver. 
+B:- The server-side helps connect with the database, which is already stored in the server database. 
+
+(9) File Access:-
+A:- It does have any access to the files present in the web servers. But we have an option to upload files from the front end.
+B:- It has total access to the files which are stored in the web database server. 
+
+(10) Occurrence:-
+A:- 	It occurs when the browser process all the codes, and then it reacts according to the client’s query. 
+B:- It only acts after the client initiates the browsing request. 
+
+(11) Running:-
+A:- It runs on the end-users system. 
+B:- It runs on the webserver. 
+
+(12) Languages:-
+A:- HTML, JavaScript, CSS are used to display the request.
+B:- PHP, Python, Ruby, nodejs are some of the programming languages used at server-side.
+
+
+
+Ques 21:-What is Progressive Renderring?
+Ans:- Progressive Server-Side Rendering — the key to a faster web page is the technique of sequentially rendering parts of the web page on the server-side and send it to the client in portions without waiting for the entire page to be rendered.
+
+
+Ques 22:- What is the difference between Preloading and Prefetching resources?
+Ans:-  preload is a declarative fetch, allowing you to force the browser to make a request for a resource without blocking the document’s onload event.
+Prefetch is a hint to the browser that a resource might be needed, but delegates deciding whether and when loading it is a good idea or not to the browser.
+
+
+
+Ques 23:- What are service workers?
+Ans:- A service worker is a script that runs independently in the browser background. On the user side, it can intercept its network requests and decide what to load (fetch).
+Service workers mainly serve features like background sync, push notifications and they are commonly used for’offline first’ applications, giving the developers the opportunity to take complete control over the user experience.
